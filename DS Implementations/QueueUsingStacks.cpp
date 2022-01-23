@@ -52,7 +52,7 @@ void deQueue (int N)
  if (s1.Isempty() && s2.Isempty())
      {
             cout << "Queue is empty";
-            exit(0);
+            //exit(0);
      }
      else if (s2.Isempty())
      {

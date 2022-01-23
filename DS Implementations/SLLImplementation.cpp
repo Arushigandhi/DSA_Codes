@@ -254,8 +254,8 @@ int main()
         case 8:
         display(start);
         break;
-        case 9:
-        exit(0);
+        //case 9:
+        //exit(0);
     }
     }
 }

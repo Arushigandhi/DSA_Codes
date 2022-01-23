@@ -68,29 +68,32 @@ int main()
         {
         case ')':
             x= s.pop();
-            if (x == '{' || x == '[')
+            if (x != '(')
             t= 1;
             break;
 
         case '}':
             x= s.pop();
-            if (x == '(' || x == '[')
+            if (x == '{')
             t= 1;
             break;
 
         case ']':
             x= s.pop();
-            if (x == '(' || x == '{')
+            if (x == '[')
             t= 1;
             break;
         }
         if(t==1)
         {
          cout<<"The given expression does not have matching paranthesis.";
-         break;
+         exit(0);
         }
 }
-   if (t==0)
+   if (t==0 && s.Isempty())
    cout<<"The given expression has matching paranthesis.";
+   else
+   cout<<"The given expression does not have matching paranthesis.";
+
  return 0;
 }

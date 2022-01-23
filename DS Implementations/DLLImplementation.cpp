@@ -307,7 +307,7 @@ class dnode
     {
         int x=0;
         dnode *curr= start;
-        
+
         if(curr==NULL)
         {
           cout<<"The list is empty.\n";
@@ -331,7 +331,7 @@ class dnode
         else */
         cout<<"->NULL"<<endl;
     }
- 
+
 int main()
 {
     dnode *start= NULL;
@@ -369,8 +369,8 @@ int main()
         case 9:
         display(start);
         break;
-        case 10:
-        exit(0);
+        //case 10:
+        //exit(0);
     }
     }
 }

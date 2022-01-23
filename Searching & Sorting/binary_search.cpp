@@ -4,7 +4,8 @@ int main()
 {
     int n;
     cin>>n;
-    int i, j, key, m = 0, l = 0, h = n-1, a[n],pos =0;
+    int i, j, key, m = 0, l = 0, h = n-1,pos =0;
+    int a[n];
     cout << "Enter a sorted array of integers" << endl;
     for (i = 0; i < n; i++)
     {
